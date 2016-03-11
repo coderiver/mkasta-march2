@@ -1,0 +1,36 @@
+.time-b
+	display: inline-block
+	font-size: 0
+	.time-b__container
+		+r(1100)
+			margin: 0 -1%
+	.time-b__item
+		display: block
+		text-align: center
+		background-color: $dark
+		width: 43px
+		height: 43px
+		line-height: 43px
+		margin-bottom: 26px
+		cursor: pointer
+		position: relative
+		+r(1100)
+			margin: 0 1%
+			width: 23%
+			height: 50px
+			line-height: 52px
+		+r(700)
+			height: 40px
+			line-height: 40px
+		+r(500)
+			width: 31%
+			margin-bottom: 10px
+		&:active
+			top: 1px
+		span 
+			font-size: 16px
+			color: #fff
+			+bold
+			display: inline-block
+			+r(1100)
+				font-size: 18px
