@@ -96,3 +96,32 @@ img
 	&.input-text_mod
 		height: 30px
 		padding: 0 10px
+.title
+	color: white
+	+helvetica-bold
+	font-size: 36.29px
+	font-weight: 700
+	text-transform: uppercase
+	display: inline-block
+	position: relative
+	&:before, &:after
+		content: ' '
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		margin: auto
+		width: 65px
+		height: 2px
+		background-color: #fff
+		right: 100%
+		margin-right: 24px
+	&:after
+		left: 100%
+		right: auto
+		margin-left: 24px
+		
+	&.title_dark
+		color: $dark
+		&:before, &:after
+			background-color: $dark

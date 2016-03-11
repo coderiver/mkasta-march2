@@ -95,6 +95,12 @@ img { max-width: 100%; height: auto; }
 
 .input-text.input-text_mod { height: 30px; padding: 0 10px; }
 
+.title { color: white; font-family: "Helvetica Neue Bold", sans-serif; font-size: 36.29px; font-weight: 700; text-transform: uppercase; display: inline-block; position: relative; }
+.title:before, .title:after { content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; width: 65px; height: 2px; background-color: #fff; right: 100%; margin-right: 24px; }
+.title:after { left: 100%; right: auto; margin-left: 24px; }
+.title.title_dark { color: #56043a; }
+.title.title_dark:before, .title.title_dark:after { background-color: #56043a; }
+
 .out { background-color: #8d0a61; }
 
 .inner { max-width: 980px; padding: 70px 20px 0; width: 100%; margin: auto; }
@@ -128,27 +134,53 @@ img { max-width: 100%; height: auto; }
 .mail-form .input-text { font-size: 13px; font-family: "Proximanova Regular", sans-serif; margin-bottom: 18px; }
 .mail-form .btn { background-color: #3d0122; font-family: "Proximanova Bold", sans-serif; width: 115px; }
 
+.share-wrp { position: relative; }
+.share-wrp .time-b { position: absolute; top: 87px; right: 100%; margin-right: -19px; }
+
+.share { position: relative; }
+.share .share__in { max-width: 980px; margin: auto; padding: 0 20px 137px; }
+.share .share__in.share__in_no-space { padding-bottom: 0; }
+
+.logos-wrp { position: relative; }
+
+.logos { max-width: 940px; background-color: white; -webkit-border-radius: 10px; border-radius: 10px; margin: auto; text-align: left; padding: 178px 35px 37px; text-align: center; position: relative; }
+.logos.logos_bg-first { background: url(../img/logos-bg.png) repeat center; }
+.logos.logos_bg-second { background: url(../img/logos-bg2.png) repeat center; }
+
+.logos__top { color: #fff; font-family: "PfSqureSansPro Bold", sans-serif; font-size: 25px; margin-bottom: 20px; position: absolute; text-align: center; display: inline-block; width: 130px; height: 165px; z-index: 1; padding: 15px 10px; letter-spacing: -0.01em; background: url(../img/logos-top.png) no-repeat center top; top: 0; left: 60px; }
+
 .time-b { display: inline-block; font-size: 0; }
-.time-b .time-b__item { display: block; text-align: center; background-color: #56043a; width: 43px; height: 43px; line-height: 43px; margin-bottom: 26px; cursor: pointer; position: relative; }
+.time-b .time-b__item { display: block; text-align: center; background-color: #56043a; width: 43px; height: 43px; -webkit-border-radius: 50%; border-radius: 50%; line-height: 43px; margin-bottom: 26px; cursor: pointer; position: relative; }
 .time-b .time-b__item:active { top: 1px; }
-.time-b .time-b__item span { font-size: 16px; color: #fff; font-family: "PfSqureSansPro Bold", sans-serif; display: inline-block; }
+.time-b .time-b__item span { font-size: 12px; color: #fff; font-family: "PfSqureSansPro Bold", sans-serif; display: inline-block; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1100px){
+ .share-wrp .time-b{ display: block; position: relative; padding: 30px 0; text-align: center; top: auto; right: auto; margin-right: auto; }
+ .share-wrp .time-b .time-b__item{ display: inline-block; }
  .time-b .time-b__container{ margin: 0 -1%; }
  .time-b .time-b__item{ margin: 0 1%; width: 23%; height: 50px; line-height: 52px; }
  .time-b .time-b__item span{ font-size: 18px; } }
 @media only screen and (max-width: 1024px){
  .btn-med{ font-size: 16px; }
  .go-in .col1{ width: 65%; }
- .go-in .col2{ width: 35%; } }
+ .go-in .col2{ width: 35%; }
+ .logos__top{ font-size: 22px; padding: 15px; } }
+@media only screen and (min-width: 900px){
+ .logos:before{ content: " "; display: block; position: absolute; top: 15px; bottom: 15px; left: 20px; right: 20px; border: 3px dotted #b30a66; -webkit-border-radius: 10px; border-radius: 10px; } }
+@media only screen and (max-width: 900px){
+ .logos{ padding: 30px 20px; }
+ .logos__top{ left: 0; right: 0; margin: auto; max-width: 300px; width: 100%; height: 50px; background: #8d0a61; top: auto; bottom: 100%; } }
 @media only screen and (max-width: 700px){
+ .share-wrp .time-b{ padding: 15px 0; }
  .time-b .time-b__item{ height: 40px; line-height: 40px; } }
 @media only screen and (max-width: 500px){
+ .share-wrp .time-b{ text-align: left; }
  .time-b .time-b__item{ width: 31%; margin-bottom: 10px; } }
 @media only screen and (max-width: 450px){
  .go-in .col1{ width: 100%; padding-right: 0; margin-bottom: 10px; }
- .go-in .col2{ width: 100%; } }
+ .go-in .col2{ width: 100%; }
+ .logos__top{ font-size: 21px; } }
 
 
 
