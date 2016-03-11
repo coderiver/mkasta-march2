@@ -76,6 +76,7 @@ a.btn { text-decoration: none; }
 .top__in { max-width: 1822px; padding: 20px 20px 0; width: 100%; margin: auto; }
 
 .top__h { display: inline-block; margin-bottom: 18px; font: 0/0 a; text-shadow: none; color: transparent; }
+.top__h img { width: 100%; }
 
 .top__text { color: #fff; font-family: "Helvetica Neue Medium", sans-serif; font-size: 32px; line-height: 56px; }
 .top__text h3 { font-family: "Helvetica Neue", sans-serif; }
@@ -378,7 +379,8 @@ a.btn { text-decoration: none; }
  .top__text span{ font-size: 40px; }
  .top__text h1{ font-size: 45px; margin-top: 10px; line-height: 1.2; }
  .logos{ padding: 30px 0px; }
- .logos .title{ margin-bottom: 20px; } }
+ .logos .title{ margin-bottom: 20px; }
+ .bottom .btn{ width: 160px; height: 50px; line-height: 50px; font-size: 20px; } }
 @media only screen and (min-width: 900px){
  .title:before, .title:after{ content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; width: 65px; height: 2px; background-color: #fff; right: 100%; margin-right: 24px; }
  .title:after{ left: 100%; right: auto; margin-left: 24px; } }
