@@ -131,7 +131,7 @@
 		width: 115px
 .share-wrp
 	position: relative
-	background: url(../img/bg.png) no-repeat center bottom 
+	overflow: hidden
 	.time-b
 		position: absolute
 		top: 160px
@@ -139,7 +139,7 @@
 		+r(1100)
 			display: block
 			position: relative
-			padding: 30px 0
+			padding: 0 0 30px
 			text-align: center
 			top: auto
 			right: auto
@@ -151,8 +151,59 @@
 		.time-b__item
 			+r(1100)
 				display: inline-block
+.share-bg1
+	background: url(../img/background.jpg) no-repeat center
+	position: relative
+	&:before
+		content: ' '
+		display: block
+		position: absolute
+		border-style: solid
+		border-width: 0px 1920px 90px 0
+		border-color: transparent #8d0a61 transparent transparent
+		z-index: 0
+		top: 0
+		left: 0
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 90px 0 0px 1920px
+		border-color: transparent transparent transparent #8d0a61
+		z-index: 0
+		bottom: 0
+		left: 0
+.share-bg2
+	background: url(../img/background2.jpg) no-repeat center
+	position: relative
+	&:before
+		content: ' '
+		display: block
+		position: absolute
+		border-style: solid
+		border-width: 0px 1920px 90px 0
+		border-color: transparent #8d0a61 transparent transparent
+		z-index: 0
+		top: 0
+		left: 0
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 90px 0 0px 1920px
+		border-color: transparent transparent transparent #8d0a61
+		z-index: 0
+		bottom: 0
+		left: 0
 .share
 	position: relative
+	z-index: 1
 	&.share_first
 		// background: url(../img/share-bg1.jpg) no-repeat center
 		background-size: cover
@@ -162,7 +213,7 @@
 	.share__in
 		max-width: 980px
 		margin: auto
-		padding: 0 20px 137px
+		padding: 68px 20px 80px
 		&.share__in_no-space
 			padding-bottom: 0
 .logos-wrp

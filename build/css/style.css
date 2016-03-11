@@ -137,13 +137,21 @@ a.btn { text-decoration: none; }
 .mail-form .input-text { font-size: 13px; font-family: "Proximanova Regular", sans-serif; margin-bottom: 18px; }
 .mail-form .btn { background-color: #3d0122; font-family: "Proximanova Bold", sans-serif; width: 115px; }
 
-.share-wrp { position: relative; background: url(../img/bg.png) no-repeat center bottom; }
+.share-wrp { position: relative; overflow: hidden; }
 .share-wrp .time-b { position: absolute; top: 160px; right: 100%; }
 
-.share { position: relative; }
+.share-bg1 { background: url(../img/background.jpg) no-repeat center; position: relative; }
+.share-bg1:before { content: " "; display: block; position: absolute; border-style: solid; border-width: 0px 1920px 90px 0; border-color: transparent #8d0a61 transparent transparent; z-index: 0; top: 0; left: 0; }
+.share-bg1:after { content: " "; display: block; position: absolute; width: 0; height: 0; border-style: solid; border-width: 90px 0 0px 1920px; border-color: transparent transparent transparent #8d0a61; z-index: 0; bottom: 0; left: 0; }
+
+.share-bg2 { background: url(../img/background2.jpg) no-repeat center; position: relative; }
+.share-bg2:before { content: " "; display: block; position: absolute; border-style: solid; border-width: 0px 1920px 90px 0; border-color: transparent #8d0a61 transparent transparent; z-index: 0; top: 0; left: 0; }
+.share-bg2:after { content: " "; display: block; position: absolute; width: 0; height: 0; border-style: solid; border-width: 90px 0 0px 1920px; border-color: transparent transparent transparent #8d0a61; z-index: 0; bottom: 0; left: 0; }
+
+.share { position: relative; z-index: 1; }
 .share.share_first { background-size: cover; }
 .share.share_second { background-size: cover; }
-.share .share__in { max-width: 980px; margin: auto; padding: 0 20px 137px; }
+.share .share__in { max-width: 980px; margin: auto; padding: 68px 20px 80px; }
 .share .share__in.share__in_no-space { padding-bottom: 0; }
 
 .logos-wrp { position: relative; }
@@ -369,7 +377,7 @@ a.btn { text-decoration: none; }
  .header-top_right{ min-width: 520px; }
  .nav_toggle-container{ left: 200px; } }
 @media only screen and (max-width: 1100px){
- .share-wrp .time-b{ display: block; position: relative; padding: 30px 0; text-align: center; top: auto; right: auto; margin-right: auto; }
+ .share-wrp .time-b{ display: block; position: relative; padding: 0 0 30px; text-align: center; top: auto; right: auto; margin-right: auto; }
  .share-wrp .time-b .time-b__item{ display: inline-block; }
  .time-b .time-b__container{ margin: 0 -1%; }
  .time-b .time-b__item{ margin: 0 1%; width: 23%; height: 50px; line-height: 52px; -webkit-border-radius: 0; border-radius: 0; }
