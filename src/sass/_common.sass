@@ -55,10 +55,13 @@ img
 	position: relative
 	&:active
 		top: 1px
+a.btn
+	text-decoration: none
 .btn-sm
 	@extend %btn
 	width: 115px
 	height: 30px
+	line-height: 30px
 	background-color: $dark
 	border-radius: 2px
 	+proxima-regular
@@ -104,22 +107,25 @@ img
 	text-transform: uppercase
 	display: inline-block
 	position: relative
-	&:before, &:after
-		content: ' '
-		display: block
-		position: absolute
-		top: 0
-		bottom: 0
-		margin: auto
-		width: 65px
-		height: 2px
-		background-color: #fff
-		right: 100%
-		margin-right: 24px
-	&:after
-		left: 100%
-		right: auto
-		margin-left: 24px
+	+r(900)
+		font-size: 30px
+	+rm(900)
+		&:before, &:after
+			content: ' '
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+			width: 65px
+			height: 2px
+			background-color: #fff
+			right: 100%
+			margin-right: 24px
+		&:after
+			left: 100%
+			right: auto
+			margin-left: 24px
 		
 	&.title_dark
 		color: $dark

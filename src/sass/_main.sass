@@ -3,18 +3,25 @@
 	background-color: $magenta
 .inner
 	max-width: 980px
-	padding: 70px 20px 0
+	padding: 20px 20px 0
 	width: 100%
 	margin: auto
 .top
 	position: relative
 	text-align: center
-	background: url(../img/top-bg.png) no-repeat center top
+	background: url(../img/top.jpg) no-repeat center top
 	background-size: cover
-	min-height: 732px
+	min-height: 625px
+	.go-in
+		margin-top: 20px
+.top__in
+	max-width: 1822px
+	padding: 20px 20px 0
+	width: 100%
+	margin: auto
 .top__h
 	display: inline-block
-	margin-bottom: 31px
+	margin-bottom: 18px
 	+hide-text
 .top__text
 	color: #fff
@@ -32,7 +39,7 @@
 	h1
 		font-size: 56px
 		line-height: 76px
-		margin-top: 42px
+		margin-top: 24px
 .slider
 	.slick-arrow
 		margin-top: -40px
@@ -83,7 +90,7 @@
 	height: 172px
 	padding: 15px 10px 20px
 	text-align: center
-	background-color: $dark
+	background-color: #78125f
 	border-radius: 5px
 	z-index: 9900
 	right: 14px
@@ -105,15 +112,13 @@
 		background-color: #3d0122
 		+proxima-bold
 		width: 115px
-
-
 .share-wrp
 	position: relative
+	background: url(../img/bg.png) no-repeat center bottom 
 	.time-b
 		position: absolute
-		top: 87px
+		top: 160px
 		right: 100%
-		margin-right: -19px
 		+r(1100)
 			display: block
 			position: relative
@@ -131,6 +136,12 @@
 				display: inline-block
 .share
 	position: relative
+	&.share_first
+		// background: url(../img/share-bg1.jpg) no-repeat center
+		background-size: cover
+	&.share_second
+		// background: url(../img/share-bg2.jpg) no-repeat center
+		background-size: cover
 	.share__in
 		max-width: 980px
 		margin: auto
@@ -141,64 +152,34 @@
 	position: relative
 .logos
 	max-width: 940px
-	background-color: white
+	background-color: transparent
 	border-radius: 10px
 	margin: auto
 	text-align: left
-	padding: 178px 35px 37px
+	padding: 37px 35px 37px
 	text-align: center
 	position: relative
-	&:before
-		+rm(900)
-			content: ' '
-			display: block
-			position: absolute
-			top: 15px
-			bottom: 15px
-			left: 20px
-			right: 20px
-			border: 3px dotted #b30a66
-			border-radius: 10px
-	&.logos_bg-first
-		background: url(../img/logos-bg.png) repeat center 
-	&.logos_bg-second
-		background: url(../img/logos-bg2.png) repeat center 
 	+r(900)
 		padding: 30px 20px
+	.title
+		margin-bottom: 47px 
 	// +r(900)
 	// 	padding: 25px
 	// +r(790)
 	// 	padding: 30px 25px
 	// +r(600)
 	// 	padding: 15px
-.logos__top
-	color: #fff
-	+bold
-	font-size: 25px
-	margin-bottom: 20px
-	position: absolute
-	text-align: center
-	display: inline-block
-	width: 130px
-	height: 165px
-	z-index: 1
-	padding: 15px 10px
-	letter-spacing: -0.01em 
-	background: url(../img/logos-top.png) no-repeat center top 
-	top: 0
-	left: 60px
-	+r(1024)
-		font-size: 22px
-		padding: 15px
-	+r(900)
-		left: 0
-		right: 0
-		margin: auto
-		max-width: 300px
-		width: 100%
-		height: 50px
-		background: $magenta
-		top: auto
-		bottom: 100%
-	+r(450)
-		font-size: 21px
+.bottom
+	position: relative
+	.btn
+		display: block
+		margin: 173px auto 173px
+		line-height: 70px
+		+r(1024)
+			margin: 100px auto
+
+@keyframes show 
+	0%
+		opacity: 0
+	100%
+		opacity: 1
